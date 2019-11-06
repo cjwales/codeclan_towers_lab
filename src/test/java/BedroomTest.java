@@ -8,12 +8,14 @@ public class BedroomTest {
     Bedroom bedroom1;
     Bedroom bedroom2;
     Bedroom bedroom3;
+    Guest guest1;
 
     @Before
     public void before() {
         bedroom1 = new Bedroom(10, 1,"Single");
         bedroom2 = new Bedroom(20, 2,"Double");
         bedroom3 = new Bedroom(30, 4,"Family");
+        guest1 = new Guest("Bill Bates");
     }
 
     @Test
@@ -34,5 +36,11 @@ public class BedroomTest {
     @Test
     public void roomShouldStartEmpty() {
         assertEquals(0, bedroom1.getGuests().size());
+    }
+
+    @Test
+    public void bedroomCanAddGuest() {
+        bedroom1.addGuest(guest1);
+        assertEquals(1, bedroom1.getGuests().size());
     }
 }

@@ -45,4 +45,8 @@ public class Bedroom {
     public void setType(String type) {
         this.type = type;
     }
+
+    public void addGuest(Guest guest) {
+        this.guests.add(guest);
+    }
 }

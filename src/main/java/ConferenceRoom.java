@@ -36,4 +36,8 @@ public class ConferenceRoom {
     public void setGuests(ArrayList<Guest> guests) {
         this.guests = guests;
     }
+
+    public void addGuest(Guest guest) {
+        this.guests.add(guest);
+    }
 }

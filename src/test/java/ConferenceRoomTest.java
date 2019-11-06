@@ -8,12 +8,14 @@ public class ConferenceRoomTest {
     ConferenceRoom conferenceRoom1;
     ConferenceRoom conferenceRoom2;
     ConferenceRoom conferenceRoom3;
+    Guest guest1;
 
     @Before
     public void before() {
         conferenceRoom1 = new ConferenceRoom("Colin Bell Memorial Room", 6);
         conferenceRoom2 = new ConferenceRoom("Chris Wales Memorial Room", 8);
         conferenceRoom3 = new ConferenceRoom("NateDawgg Memorial Room", 12);
+        guest1 = new Guest("James Banned");
     }
 
     @Test
@@ -29,5 +31,11 @@ public class ConferenceRoomTest {
     @Test
     public void roomStartsEmpty() {
         assertEquals(0, conferenceRoom3.getGuests().size());
+    }
+
+    @Test
+    public void bedroomCanAddGuest() {
+        conferenceRoom1.addGuest(guest1);
+        assertEquals(1, conferenceRoom1.getGuests().size());
     }
 }
