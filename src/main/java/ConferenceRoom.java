@@ -40,4 +40,5 @@ public class ConferenceRoom {
     public void addGuest(Guest guest) {
         this.guests.add(guest);
     }
+
 }

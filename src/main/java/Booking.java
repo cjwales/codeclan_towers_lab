@@ -23,4 +23,5 @@ public class Booking {
     public void setNights(int nights) {
         this.nights = nights;
     }
+
 }

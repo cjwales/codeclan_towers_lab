@@ -43,4 +43,5 @@ public class BedroomTest {
         bedroom1.addGuest(guest1);
         assertEquals(1, bedroom1.getGuests().size());
     }
+
 }

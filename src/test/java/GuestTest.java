@@ -21,4 +21,5 @@ public class GuestTest {
     public void guestHasName() {
         assertEquals("Jordan", guest1.getName());
     }
+
 }

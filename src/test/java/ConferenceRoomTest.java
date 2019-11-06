@@ -38,4 +38,5 @@ public class ConferenceRoomTest {
         conferenceRoom1.addGuest(guest1);
         assertEquals(1, conferenceRoom1.getGuests().size());
     }
+
 }
